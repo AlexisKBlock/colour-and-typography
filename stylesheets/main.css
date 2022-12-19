@@ -1,0 +1,157 @@
+/*
+  I chose a light theme for my website because it has a lot of text, and the text is the main focus.
+  I chose a mostly monocrome color scheme for my website because it is an informational website.
+  I want it to look modern and professional, so i didn't use bright colors and stuck with a white, dark blue and grey theme.
+  I used an off white instead of a harsh white to make it warmer and less sterile, and to make the content readable.
+  I chose blue as my accent color because it shoes signs of trust and reliablity,
+  and I want my website to be seen as reliable information. 
+*/
+
+/*
+  This styles every element on the website to have a default of no space 
+  between the element and other elements on the webpage, and a
+  space between lines of 140% of the font size.
+*/
+* {
+  margin: 0;
+
+  line-height: 140%;
+}
+
+/*
+  This styles the html element 
+  to have a default 
+  font-size for the browser. - Scott Hardman
+*/
+html {
+  font-size: 62.5%;
+}
+
+/*
+  This styles all of the content that is in the main section 
+  to have no spacing on the top and bottom of the 
+  section and spacing that is equal to 5% of the width of the 
+  browser window on the left and right sides of the section. - Scott Hardman
+*/
+main {
+  margin: 0 5%;
+}
+
+/*
+  Styling for all of the navigation bars on my website.
+  Width 100% makes the nav bar take up 100% of the width of the webpage,
+  and height determines the height of the nav bar.
+  Flex and align-items: center and justify-content: space evenly are all
+  things to line up the content in the nav bar and space it evenly
+  horizontally and vertically.
+  Background color determines the color of the nav bar and color determines
+  the color of the text in the nav bar.
+  font-family chooses what fonts the website will use, and if neither of
+  the first ywo fonts are available,
+  it will use the default sans-serif font.
+*/
+nav {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  background-color: #1a1a3a;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/*This makes sure that links that have been visited or clicked on show up the chosen color instead of purple.*/
+
+a:visited {
+  color: #bebbe2;
+}
+
+/*This gets rid of the underline on all links.*/
+a {
+  text-decoration: none;
+  color: #dedee2;
+}
+
+/*When a link is hovered over or tabbed on to it changes the color of the text.*/
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/*
+  background-color determines the color of all of the webpages.
+  font-family chooses what fonts the website will use, and if neither of the first ywo fonts are available,
+  it will use the default sans-serif font.
+  letter-spacing determines the amount space between letters.
+  Word spacing determines the amount of space between words.
+  font-size determines the size of the text.
+*/
+body {
+  background-color: #fcfcfc;
+  font-family: Helvetica, Arial, sans-serif;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  font-size: 16px;
+}
+
+/*
+  This styles each div with the class information on this webpage.
+  It determines the width and height of the amount of the page it takes up in its container.
+  it adds ten pixels of padding between the content and its border.
+  The flex-direction: row makes the content in the div inline with each other in a row.
+  The content is centered and spaced evenly.
+  The color and font of the text is also determined.
+  Margin adds space between the content and other content.
+*/
+.information {
+  display: flex;
+  width: 90%;
+  height: 100%;
+  padding: 10px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #2a2a2a;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 40px;
+}
+
+/*
+  determines the size of the image container using width and height, 
+  with a class of image on this webpage and puts the images in a column.
+  Items are centered and spaced evenly using display: flex, flex-direction: column,
+  align-items: center, and justify-content: space-evenly.
+  Adds twenty pixels of padding between the content and its border.
+*/
+.image {
+  width: 65%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+/*
+  Specifically styles the text in the container with a class of paragraph-information.
+  Content is in a column is centered and is spaced evenly.
+  Content has a margin of twenty pixels between it and other content.
+*/
+.paragraph-information {
+  width: 45%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+
+/*Styles all h3 tags on this webpage with a color of #1a1a3a and fonts
+Helvetica or Arial, or the default sans-serif font.*/
+h3 {
+  color: #1a1a3a;
+  font-family: Helvetica, Arial, sans-serif;
+}

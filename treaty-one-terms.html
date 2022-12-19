@@ -1,0 +1,133 @@
+<!--
+  Name: Alexis Block
+  Course: Web Development
+  Teacher: Mr. Hardman
+  School: PTEC
+  Date Last Modified: 12/19/2022
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--Link to the external stylesheet-->
+    <link rel="stylesheet" href="stylesheets/main.css" />
+    <!--Tag for internal styling-->
+    <style>
+      /*
+        Styles the images with a class of images on this webpage.
+        Determines the width and height of the image, and adds a top margin to the images.
+      */
+      .treaty-images {
+        width: 90%;
+        height: 100%;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--creates a navigation bar at the top of the page with a link to this page and to the other pages on the website-->
+    <nav>
+      <h3><a href="index.html">Home</a></h3>
+      <h3><a href="information1.html">Treaty One History</a></h3>
+    </nav>
+
+    <!--
+      Has the title of the webpage bellow the nav bar.
+      text is centered, font size and text color are determined.
+    -->
+    <header>
+      <h1 style="text-align: center; font-size: 40px; color: #1a1a3a">
+        Groups Involved In and Terms of Treaty One
+      </h1>
+    </header>
+
+    <!--main semantic tag holds all of the main content on the webpage-->
+    <main>
+      <!--section that has one section of an image and text inside of the container that are inline with each other.-->
+      <section class="information">
+        <!--div that is one of the text sections in the container.-->
+        <div class="paragraph-information">
+          <!--an h3 that describes what information is in the following paragraph-->
+          <h3>First Nations Groups Involved in Treaty One</h3>
+          <!--Line breaks added to spearate the heading from the content-->
+          <br />
+          <!--Paragraph with information based on the theme of the website-->
+          <p>
+            the agreement, treaty one was made between the Anishinaabe and Muskegon Cree
+            peoples and the Crown. There are seven First Nations groups that are
+            represented by Treaty One. They are the First Nation, Sagkeeng First
+            Nation who is comprised of Anicinabe people who have resided at or
+            near the Fort Alexander Reserve #3 located along the Winnipeg River
+            and Traverse Bay, since time immemorial, the Brokenhead Ojibway
+            Nation named after the Brokenhead River, the Roseau River
+            Anishinaabe First Nation named after the Roseau River and the Roseau
+            River No. 2 reserve, the Long Plain First Nation which is an Ojibway
+            and Dakota First Nations band that is located in the Central Plains
+            Region of Manitoba, the Sandy Bay Ojibway First Nation whose roots
+            began in Portage la Prairie, and the Swan Lake First Nations whos
+            land is located along Swan Lake in the Pembina Valley Region.
+          </p>
+        </div>
+        <!--div that has just one image section in the container.-->
+        <div class="image">
+          <!--Image with a determined width height and has alt text for accesssibility.-->
+          <img
+            class="treaty-images"
+            src="images/treaty-map-3.jpg"
+            width="250"
+            height="175"
+            alt="A map of Canada with the treaties color coded and 
+        a legend with the dates that they were signed." />
+        </div>
+      </section>
+      <section class="information">
+        <div class="paragraph-information">
+          <h3>The Historic Terms of Treaty One</h3>
+          <br />
+          <p>
+            Treaty No. 1 was negotiated and entered into in August 1871 at Lower
+            Fort Garry. It was signed by government agents Lieutenant-Governor
+            Adams G. Archibald, Commissioner Simpson, Major Irvine, and eight
+            witnesses. It was also signed for the Anishinaabe and the Swampy
+            Cree by Red Eagle or Henry Prince, Bird Forever or William
+            Pennefather, Flying Down Bird, Centre of Birds Tail, Flying Round,
+            Whip-poor-will, and Yellow Quill. The Anishinaabe and Swampy Cree
+            were to cede, release, surrender, and yield to her Majesty the
+            Queen.The land described in the treaty was a substantial amount of
+            present day southeast and south central Manitoba, including the Red
+            River Valley, north to the lower parts of Lake Manitoba and Lake
+            Winnipeg and west along the Assiniboine River to the towns of
+            Portage la Prairie and Brandon. The treaties provided large areas of
+            land, that had been occupied by First Nations, to the Crown which
+            transferred their Indigenous title to the Crown, in exchange for
+            reserve lands and other benefits. Each band was going to receive a
+            reserve large enough to provide 160 acres of land for each family of
+            five Each person was to be given a one-time payment of three
+            dollars, and a yearly amount of money totaling fifteen dollars per
+            family of five. The government also agreed to maintain a school on
+            each reserve and to prohibit the introduction or sale of liquor on
+            reserves.
+          </p>
+        </div>
+        <div class="image">
+          <img
+            class="treaty-images"
+            src="images/treaty-agreement.webp"
+            width="1024"
+            height="683"
+            alt="A picture of the first treaty agreement on a plaque." />
+        </div>
+      </section>
+    </main>
+
+    <!--Footer containing the copyright information-->
+    <footer style="font-size: 10px">
+      <p>&#169; 2022 Alexis Block</p>
+    </footer>
+  </body>
+</html>

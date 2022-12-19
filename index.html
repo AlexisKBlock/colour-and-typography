@@ -1,0 +1,140 @@
+<!--
+  Name: Alexis Block
+  Course: Web Development
+  Teacher: Mr. Hardman
+  School: PTEC
+  Date Last Modified: 11/9/2022
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Basics</title>
+    <!-- style tag is used for internal styling-->
+    <style>
+      /*
+        Styles the images with a class of images on this webpage.
+        Determines the width and height of the image, and adds a top margin to the images.
+      */
+      .treaty-images {
+        width: 90%;
+        height: 100%;
+        margin-top: 10px;
+      }
+    </style>
+
+    <!--Link to the external stylesheet. -->
+    <link rel="stylesheet" href="stylesheets/main.css" />
+  </head>
+
+  <body>
+    <!--creates a navigation bar at the top of the page with a link to this page and to the other pages on the website-->
+    <nav>
+      <h3><a href="index.html">Home</a></h3>
+      <h3><a href="treaty-one-terms.html">Treaty One History</a></h3>
+    </nav>
+
+    <header>
+      <!--
+        Has the title of the webpage bellow the nav bar.
+        text is centered, font size and text color are determined.
+      -->
+      <h1 style="text-align: center; font-size: 40px; color: #1a1a3a">
+        Treaty One
+      </h1>
+    </header>
+
+    <!--main semantic tag holds all of the main content on the webpage-->
+    <main>
+      <!--section that has one section of an image and text inside of the container that are inline with each other.-->
+      <section class="information">
+        <!--div that has just one image section in the container.-->
+        <div class="image">
+          <!--Image with a determined width height and has alt text for accesssibility.-->
+          <img
+            class="treaty-images"
+            src="images/treaty-map-1.jpg"
+            width="512"
+            height="413"
+            alt="A closeup map of Canadas Treaty One territory." />
+        </div>
+        <!--div that is one of the text sections in the container.-->
+        <div class="paragraph-information">
+          <!--an h3 that describes what information is in the following paragraph-->
+          <h3>First Nations Groups Involved in Treaty One</h3>
+          <br />
+          <!--Paragraph with information based on the theme of the website-->
+          <p>
+            There are seven First Nations groups that are represented by Treaty
+            One. They are the First Nation, Sagkeeng First Nation, Brokenhead
+            Ojibway Nation, Roseau River Anishinaabe First Nation, Long Plain
+            First Nation, Sandy Bay Ojibway First Nation and Swan Lake First
+            Nations groups.
+          </p>
+          <br />
+          <br />
+          <h3>The Historic Terms of Treaty One</h3>
+          <br />
+          <p>
+            The treaties provided large areas of land, that had been occupied by
+            First Nations, to the Crown which transferred their Indigenous title
+            to the Crown, in exchange for reserve lands and other benefits. Each
+            band was going to receive a reserve large enough to provide 160
+            acres of land for each family of five Each person was to be given a
+            one-time payment of three dollars, and a yearly amount of money
+            totaling $15 per family of five. The government also agreed to
+            maintain a school on each reserve.
+          </p>
+        </div>
+      </section>
+
+      <section class="information">
+        <div class="image">
+          <img
+            class="treaty-images"
+            src="images/treaty-map-2.png"
+            width="512"
+            height="413"
+            alt="A map of Canada with all of the Treaties highlighted." />
+        </div>
+        <div class="paragraph-information">
+          <h3>What Makes Treaty One Different From Other Treaties</h3>
+          <br />
+          <p>
+            Treaty One was the first treaty signed in Canada, and was the start
+            of the creating of the rest of the treaties in Canada. While each
+            treaty is based on the same model, all of the treaties are different
+            and have different terms and agreements. Because treaty one was the
+            first one signed it has less clauses than in future treaties. The
+            treaty annuity was $3 while all of the numbered treaties would have
+            $5. This amount of money was argued later on and the ammount of
+            annuity was raised to $5 to match the other treaties.
+          </p>
+          <br />
+          <br />
+          <h3>How We Are Implementing Treaty One Today</h3>
+          <br />
+          <p>
+            relationships between the Indigenous peoples and the Canadian
+            government were started through the numbered treaties. The treaties
+            today are providing a framework for living together and sharing the
+            land. The treaties provide a foundation for ongoing partnerships.
+            New treaties have been signed as of 1975 that benefit everyone, and
+            that everyone has agreed on. However reserves do still exist today,
+            which is controlled by the Crown. The federal government has control
+            over all reserves and can enforce their laws and legal authority
+            over the treaties.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!--Footer containing the copyright information-->
+    <footer style="font-size: 10px">
+      <p>&#169; 2022 Alexis Block</p>
+    </footer>
+  </body>
+</html>
