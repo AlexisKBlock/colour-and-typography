@@ -1,0 +1,138 @@
+<!--
+  Name: Alexis Block
+  Course: Web Development
+  Teacher: Mr. Hardman
+  School: PTEC
+  Date Last Modified: 1/13/2023
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Treaty One</title>
+    <!--Link to the external stylesheet-->
+    <link rel="stylesheet" href="stylesheets/main.css" />
+    <!--Tag for internal styling-->
+    <style>
+      /*
+        Styles the images with a class of images on this webpage.
+        Determines the height of the image, and adds a top margin to the images.
+      */
+      .treaty-images {
+        height: 100%;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--creates a navigation bar at the top of the page with a link to this page and to the other pages on the website-->
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html" class="nav-link, box"> Treaty One </a>
+        </li>
+        <li>
+          <a href="treaty-one-terms.html" class="nav-link, box">
+            Treaty One Terms
+          </a>
+        </li>
+        <li>
+          <a href="treaty-one-today.html" class="nav-link, box">
+            Treaty One Today
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!--
+      Has the title of the webpage below the nav bar.
+      text is centered, font size and text color are determined.
+    -->
+    <header>
+      <h1 style="text-align: center; font-size: 40px; color: #1a1a3a">
+        Treaty One Today
+      </h1>
+    </header>
+
+    <!--main semantic tag holds all of the main content on the webpage-->
+    <main>
+      <!--section that has one section of an image and text inside of the container that are inline with each other.-->
+      <section class="information">
+        <!--div that is one of the text sections in the container.-->
+        <div class="paragraph-information">
+          <!--an h3 that describes what information is in the following paragraph-->
+          <h3>What Makes Treaty One Different From Other Treaties</h3>
+          <!--Line breaks added to spearate the heading from the content-->
+          <br />
+          <!--Paragraph with information based on the theme of the website-->
+          <p>
+            Treaty One was the first treaty signed in Canada, and was the start
+            of the creating of the rest of the treaties in Canada. It was
+            created to help establish Western Canada. All of the numbered
+            treaties following this one were based on the promises and
+            agreements that were established by Treaty One. While each treaty is
+            based on the same model, all of the treaties are different and have
+            different terms and agreements. Because treaty one was the first one
+            signed it has less clauses than in future treaties. The treaty
+            annuity was $3 while all of the numbered treaties would have $5.
+            This amount of money was argued later on and the ammount of annuity
+            was raised to $5 to match the other treaties. Not all promises of
+            Treaty One have been met and are still being reviewed today. Unlike
+            some of the other Treaties, Treaty one has had no land additions.
+          </p>
+        </div>
+        <!--div that has just one image section in the container.-->
+        <div class="image">
+          <!--Image with a determined width height and has alt text for accesssibility.-->
+          <img style="width: 90%"
+            class="treaty-images"
+            src="images/treaty-map-of-canada.jpg"
+            width="374"
+            height="260"
+            alt="A map of Canada with the treaties colored in orange and numbered." />
+        </div>
+      </section>
+      <section class="information">
+        <div class="paragraph-information">
+          <h3>How We Are Implementing Treaty One Today</h3>
+          <br />
+          <p>
+            Relationships between the Indigenous peoples and the Canadian
+            government were started through the numbered treaties. The treaties
+            today are providing a framework for living together and sharing the
+            land. The treaties provide a foundation for ongoing partnerships.
+            Modern treaties have been signed as of 1975 that benefit everyone,
+            and that everyone has agreed on. They establish defined land
+            ownership and jurisdiction and a new relationship based on respect,
+            trust, and understanding. However reserves do still exist today,
+            which are controlled by the Crown. The federal government has
+            control over all reserves and can enforce their laws and legal
+            authority over the treaties. Treaty One is still recognized by the
+            crown today. Not all of the promises made in the treaty have been
+            met and are still being met in Canada today. The First Nations
+            people are starting to receive more of the land that was promised to
+            them.
+          </p>
+        </div>
+        <div class="image">
+          <img style="width: 60%;"
+            class="treaty-images"
+            src="images/kapyong-barracks.jpg"
+            width="210"
+            height="464"
+            alt="An image of the First Nations plans for the Kapyong Barracks long on Treaty One,
+            color coded and with a legend." />
+        </div>
+      </section>
+    </main>
+
+    <!--Footer containing the copyright information-->
+    <footer style="font-size: 12px">
+      <p>&#169; 2022 Alexis Block</p>
+    </footer>
+  </body>
+</html>

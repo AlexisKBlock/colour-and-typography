@@ -61,27 +61,81 @@ nav {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+/*
+  This removes the bullet points from the list items.
+*/
+nav ul {
+  list-style: none;
+}
+
+/*
+  display: inline-block displays the list items horizontally instead of vertically.
+  margin adds space between a list item and another list item.
+  font-size determines the size of the text.
+*/
+nav li {
+  display: inline-block;
+  margin: 10px;
+  font-size: 20px;
+}
+
+/*
+  This styles any content with the class of nav-link to 
+  have 4px of space between it and any other content, 5px
+  of space between it and its border and to have a color 
+  of #1a1a3a.
+*/
+.nav-link {
+  margin: 4px;
+  padding: 5px;
+  color: #1a1a3a;
+}
+
 /*This makes sure that links that have been visited or clicked on show up the chosen color instead of purple.*/
 
 a:visited {
-  color: #bebbe2;
+  color: #1a1a3a;
 }
 
 /*This gets rid of the underline on all links.*/
 a {
   text-decoration: none;
-  color: #dedee2;
+  color: #1a1a3a;
 }
 
 /*When a link is hovered over or tabbed on to it changes the color of the text.*/
 a:focus,
 a:hover {
-  color: #fff;
+  color: #3a3a5a;
+}
+
+/*
+  Background-color makes the color of the box white.
+  Border-radius determine how round the edges of the box are,
+  1px is a very square box.
+  transition-property: border-radius means the transition that is
+  happening will be to the border radius property.
+  Transition-duration determines how long the transition will take.
+  The transition-timing-function: linear means the trnasition will not
+  speed up or slow down during it.
+*/
+.box {
+  background-color: #fcfcfc;
+  border-radius: 1px;
+  transition-property: border-radius;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+/*If you hover over the box the radius will shrink to 50% of its original size.*/
+.box:hover {
+  border-radius: 50%;
 }
 
 /*
   background-color determines the color of all of the webpages.
-  font-family chooses what fonts the website will use, and if neither of the first ywo fonts are available,
+  1.8rem changes the font zie to be 1.8 times the size of the root elements.
+  font-family chooses what fonts the website will use, and if neither of the first two fonts are available,
   it will use the default sans-serif font.
   letter-spacing determines the amount space between letters.
   Word spacing determines the amount of space between words.
@@ -89,6 +143,7 @@ a:hover {
 */
 body {
   background-color: #fcfcfc;
+  font-size: 1.8rem;
   font-family: Helvetica, Arial, sans-serif;
   letter-spacing: 1px;
   word-spacing: 5px;
@@ -149,8 +204,10 @@ body {
   margin: 20px;
 }
 
-/*Styles all h3 tags on this webpage with a color of #1a1a3a and fonts
-Helvetica or Arial, or the default sans-serif font.*/
+/*
+  Styles all h3 tags on this webpage with a color of #1a1a3a and fonts
+  Helvetica or Arial, or the default sans-serif font.
+*/
 h3 {
   color: #1a1a3a;
   font-family: Helvetica, Arial, sans-serif;
